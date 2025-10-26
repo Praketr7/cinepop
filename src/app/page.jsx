@@ -26,103 +26,25 @@ const favoritesMovies = [
     rating: 5,
   },
   {
-    title: "Goodfellas",
-    year: "1990",
-    genre: "Crime",
-    poster: "/placeholder-oubu4.png",
-    imdbRating: "8.7",
-    rtRating: "96",
+    title: "Dune: Part Two",
+    year: "2024",
+    genre: "Sci-Fi",
+    poster: "/dune-part-two-poster.png",
+    imdbRating: "8.8",
+    rtRating: "93",
     rating: 5,
   },
   {
-    title: "Casino",
-    year: "1995",
-    genre: "Crime",
-    poster: "/placeholder-725iz.png",
-    imdbRating: "8.2",
-    rtRating: "80",
-    rating: 4,
-  },
-]
-
-const watchlistMovies = [
-  {
-    title: "Killers of the Flower Moon",
+    title: "Oppenheimer",
     year: "2023",
-    genre: "Crime",
-    poster: "/killers-of-the-flower-moon-poster.png",
-    imdbRating: "7.6",
+    genre: "Biography",
+    poster: "/oppenheimer-inspired-poster.png",
+    imdbRating: "8.4",
     rtRating: "93",
-    rating: 0,
-  },
-  {
-    title: "The Zone of Interest",
-    year: "2023",
-    genre: "Drama",
-    poster: "/zone-of-interest-poster.png",
-    imdbRating: "7.4",
-    rtRating: "92",
-    rating: 0,
-  },
-  {
-    title: "Poor Things",
-    year: "2023",
-    genre: "Comedy",
-    poster: "/poor-things-poster.png",
-    imdbRating: "7.9",
-    rtRating: "92",
-    rating: 0,
-  },
-  {
-    title: "American Fiction",
-    year: "2023",
-    genre: "Comedy",
-    poster: "/placeholder-p7iap.png",
-    imdbRating: "7.5",
-    rtRating: "92",
-    rating: 0,
+    rating: 5,
   },
 ]
 
-
-const recommendedMovies = [
-  {
-    title: "Killers of the Flower Moon",
-    year: "2023",
-    genre: "Crime",
-    poster: "/killers-of-the-flower-moon-poster.png",
-    imdbRating: "7.6",
-    rtRating: "93",
-    rating: 0,
-  },
-  {
-    title: "The Zone of Interest",
-    year: "2023",
-    genre: "Drama",
-    poster: "/zone-of-interest-poster.png",
-    imdbRating: "7.4",
-    rtRating: "92",
-    rating: 0,
-  },
-  {
-    title: "Poor Things",
-    year: "2023",
-    genre: "Comedy",
-    poster: "/poor-things-poster.png",
-    imdbRating: "7.9",
-    rtRating: "92",
-    rating: 0,
-  },
-  {
-    title: "American Fiction",
-    year: "2023",
-    genre: "Comedy",
-    poster: "/placeholder-p7iap.png",
-    imdbRating: "7.5",
-    rtRating: "92",
-    rating: 0,
-  },
-]
 
 export default function HomePage() {
 
@@ -151,17 +73,17 @@ useEffect(()=>{
           <MovieSlider title="Trending Now" movies={trendingMovies} size="large" viewAllLink="/trending" />
         </section>
 
-        <section>
+        {/* <section>
           <MovieSlider title="Recommended for You" movies={recommendedMovies} viewAllLink="/recommended" />
-        </section>
+        </section> */}
 
         <section>
           <MovieSlider title="Favorites Worth Rewatching" movies={favoritesMovies} viewAllLink="/favorites" />
         </section>
 
-        <section>
+        {/* <section>
           <MovieSlider title="Your Watchlist" movies={watchlistMovies} viewAllLink="/watchlist" />
-        </section>
+        </section> */}
       </main>
 
       <Chatbot />
